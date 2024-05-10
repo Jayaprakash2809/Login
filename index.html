@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:#57c4a6;
+        }
+        .parent{
+            background-color: white;
+            width: 30%;
+            margin: auto;
+            padding: 4% 0%;
+            border-radius: 10px;
+            margin-top: 5%;
+            
+        }
+        .input{
+            padding:3% 2% ;
+            width: 80%;
+            margin-left: 8%;
+        }
+        .btu{
+            margin-left: 40%;
+            padding: 2% 4%;
+            border:none;
+            background-color: #0b847a;
+            color: white;
+            border-radius: 8%;
+            font-family: sans-serif;
+
+        }
+        .forgot,.signup{
+            margin-left: 27%;
+        }
+        .forgot a,.signup a{
+            color: #57c4a6;
+            font-family: sans-serif;
+            text-decoration: none;
+        }
+        .login{
+            font-family: sans-serif;
+            font-weight: normal;
+            text-align: center;
+            color: #57c4a6;
+        }
+        @media(max-width:600px){
+            .parent{
+                width: 100%;
+                margin: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <h2 class="login" >Login</h2>
+         <p><input class="input" placeholder="Email" type="email"></p>
+         <p><input class="input" placeholder="Password" type="password"></p>
+         <p><input style="margin-left: 8%;" type="checkbox">show password</p>
+         <input class="btu" type="button" value="SignIn"> 
+         <p class="forgot">
+            Forgot <a href="">UserName</a> / <a href="">Password</a> 
+         </p>
+         <p class="signup">
+            Don't have any account <a href="">Sign Up</a>
+         </p>
+    </div>
+</body>
+</html>
